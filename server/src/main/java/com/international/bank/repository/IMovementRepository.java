@@ -11,6 +11,6 @@ import com.international.bank.entity.Movements;
 
 @Repository
 public interface IMovementRepository extends JpaRepository<Movements, Integer>{
-	@Query("SELECT t FROM Movements t WHERE t.idClient = :idClient")
+	@Query("SELECT t FROM Movements t WHERE t.numberClient = :idClient")
     List<Movements> findByIdClient(@Param("idClient") Integer idClient);
 }

@@ -16,6 +16,15 @@ public class Movements {
 	Double value;
 	String detail;
 	Integer idClient;
+	Integer numberClient;
+
+	public Integer getNumberClient() {
+		return numberClient;
+	}
+
+	public void setNumberClient(Integer numberClient) {
+		this.numberClient = numberClient;
+	}
 
 	public Integer getId() {
 		return id;
